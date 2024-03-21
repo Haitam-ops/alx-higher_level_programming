@@ -1,0 +1,6 @@
+#!/bin/bash
+
+[ -z "$PYFILE" ] && { echo "PYFILE environment variable is not set."; exit 1; }
+[ ! -f "$PYFILE" ] && { echo "File specified in PYFILE environment variable does not exist."; exit 1; }
+
+python3 "$PYFILE"
